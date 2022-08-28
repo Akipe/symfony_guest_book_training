@@ -16,7 +16,7 @@ class ConferenceController extends AbstractController
 
         return $this->render('homepage/index.html.twig', [
             'controller_name' => 'ConferenceController',
-            'name' => htmlspecialchars($name)
+            'name' => $name
         ]);
     }
 }
