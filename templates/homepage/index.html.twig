@@ -4,6 +4,9 @@
 
 {% block body %}
 <div class="under_construction">
+    {% if name is not empty %}
+        <h1>Hello {{ name }}!</h1>
+    {% endif %}
     <img alt="Application under construction" src="/images/under-construction.gif" />
 </div>
 {% endblock %}
